@@ -87,7 +87,7 @@ comparison () {
       selected.classList.add('item-selected__right')
       let divImage = selected.querySelector('.item-image-answer');
       let image  = new Image();
-      image.src = '../images/right.png'
+      image.src = './images/right.png'
       divImage.append(image);
       this.counter++;
 
@@ -99,7 +99,7 @@ comparison () {
       selected.classList.add('item-selected__wrong')
       let divImage = selected.querySelector('.item-image-answer');
       let image  = new Image();
-      image.src = '../images/wrong.png'
+      image.src = './images/wrong.png'
       divImage.append(image);
       console.log('You\'ve lost');
     }
