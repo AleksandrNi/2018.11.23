@@ -1,0 +1,64 @@
+.aside {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr;
+  max-height: 100vh;
+
+  .search-container {
+    display: flex;
+    padding: 20px;
+    border: 1px solid rebeccapurple;
+    border-bottom: none;
+
+    .search {
+      width: 100%;
+      margin: auto;
+      padding: 10px;
+      border: 2px solid rebeccapurple;
+      border-radius: 15px;
+      font-size: 16px;
+      outline: none;
+    }
+  }
+
+  .product-container {
+    margin: 0;
+    padding: 0;
+    border: 1px solid rebeccapurple;
+    overflow-y: auto;
+  }
+
+  .product-item {
+    display: flex;
+    justify-content: space-between;
+    max-height: 160px;
+    padding: 20px 10px;
+    list-style-type: none;
+    cursor: pointer;
+    transition: background-color .4s;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid rebeccapurple;
+    }
+
+    &:hover {
+      background-color: #f9f8f4;
+    }
+
+    .item-image {
+      max-width: 120px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .item-description {
+      flex: 2;
+      margin: 0 0 0 15px;
+      font-size: 14px;
+      overflow: hidden;
+    }
+  }
+}

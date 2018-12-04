@@ -1,0 +1,17 @@
+- let items = locals;
+
+div.wrapper
+	div.wrapper-left
+		each item , index in items
+			if index < 2
+				div.item
+					div.item-image-answer
+					div.item-text #{item}
+div.wrapper
+	div.wrapper-right
+		each item, index in items
+			if index > 1
+				div.item
+					div.item-image-answer
+					div.item-text #{item}
+

@@ -1,0 +1,50 @@
+.product-card {
+  padding: 40px;
+
+  .product-header {
+    display: flex;
+    justify-content: space-between;
+
+    .product-image {
+      width: 400px;
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      margin-left: 40px;
+
+      .button {
+        width: 150px;
+        padding: 10px;
+        border: 2px solid rebeccapurple;
+        border-radius: 15px;
+        background-color: #fff;
+        outline: none;
+        transition: background-color .6s;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #f7fcff;
+        }
+
+        &:focus {
+          background-color: #f2e8ff;
+        }
+      }
+
+      .price {
+        font-weight: 700;
+        font-size: 20px;
+        color: rebeccapurple;
+      }
+    }
+  }
+}

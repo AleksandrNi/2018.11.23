@@ -1,0 +1,11 @@
+- let items = locals;
+- let number = items.number;
+- let quantity = items.quantity;
+- let begin = 0;
+
+ul.paginator-ul
+	each item in quantity
+		if item <= number
+			li.paginator__active
+		if item > number
+			li.paginator__inactive

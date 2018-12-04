@@ -1,0 +1,244 @@
+.product-container {
+  margin: 0 0;
+}
+.product-container-top {
+  width: 100%;
+  height: 100px;
+}
+.product-container-middle {
+  width: 100%;
+  height: 40%;  
+  display: flex;
+justify-content: center; /*Центрирование по горизонтали*/
+align-items: center;     /*Центрирование по вертикали */
+}
+.product-container-bottom {
+  width: 100%;
+  height: 20%;  
+  width: 80%;
+display: flex;
+justify-content: center; /*Центрирование по горизонтали*/
+align-items: center;     /*Центрирование по вертикали */
+padding-top: 15px;
+margin: auto;
+}
+.paginator {  
+width: 80%;
+display: flex;
+justify-content: center; /*Центрирование по горизонтали*/
+align-items: center;     /*Центрирование по вертикали */
+padding-top: 15px;
+margin: auto;
+}
+
+.header-container {
+width: 1160px;
+margin: auto;
+display: flex;
+justify-content: center; /*Центрирование по горизонтали*/
+align-items: center;     /*Центрирование по вертикали */
+}
+
+.header-outter {
+float:left;
+}
+.header-number {
+font-family: OpenSans-Bold;
+font-size: 32px;
+color: #0D7BAB;
+letter-spacing: 0;
+}
+.header-desc {
+padding-left: 15px;
+font-family: OpenSans;
+font-size: 24px;
+color: #223336;
+letter-spacing: 0;
+}
+
+.wrapper {
+float: left;
+width: 580px;
+}
+.wrapper-left {
+float: right;
+
+}
+.wrapper-right {
+float: left;
+
+}
+.item {
+display: flex;
+justify-content: center; /*Центрирование по горизонтали*/
+align-items: center;     /*Центрирование по вертикали */
+
+margin: 20px 10px;
+background: #FAFAFA;
+border: 2px solid #D9E6EB;
+border-radius: 23px;
+}
+
+.item-text-hover {
+box-shadow: rgb(35, 173, 255) 0px 0px 6px 0px;
+}
+.item-selected {
+background: #FAFAFA;
+border: 2px solid #0D7BAB;
+}
+.item-selected__right {
+
+border: 2px solid #33C933;
+}
+.item-selected__wrong {
+background: #FAFAFA;
+border: 2px solid #FB4343;
+}
+
+.item-image-answer {
+margin-left: 37px;
+display: flex;
+justify-content: center; /*Центрирование по горизонтали*/
+align-items: center;     /*Центрирование по вертикали */
+width: 70px;
+height: 70px;
+}
+
+.item-text {
+margin-left: -107px;
+display: flex;
+justify-content: center; /*Центрирование по горизонтали*/
+align-items: center;     /*Центрирование по вертикали */
+padding: 0 115px;
+width: 570px;
+height: 164px;
+
+font-family: OpenSans-Semibold;
+font-size: 28px;
+color: #496472;
+letter-spacing: 0;
+}
+.item-text-selected {
+color: #0D7BAB;
+}
+
+
+.button-order {
+  background: #F0F0F0;
+  border-radius: 100px;
+  
+  display: flex;
+  justify-content: center; /*Центрирование по горизонтали*/
+  align-items: center;     /*Центрирование по вертикали */
+  width:375px;
+  height: 69px;
+  border: none;
+  margin-top: 20px;
+  box-shadow: none;
+
+  font-family: OpenSans-Semibold;
+  font-size: 30px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.button-order-active{
+  background: #FF8F48;
+  border-radius: 100px;
+
+  display: flex;
+  justify-content: center; /*Центрирование по горизонтали*/
+  align-items: center;     /*Центрирование по вертикали */
+  width:375px;
+  height: 69px;
+  border: none;
+  margin-top: 20px;
+  box-shadow: none;
+
+  font-family: OpenSans-Semibold;
+  font-size: 30px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+
+}
+.button-order-continue,
+.button-order-continue :hover {
+  background: #F68034;
+  border-radius: 100px;
+
+  display: flex;
+  justify-content: center; /*Центрирование по горизонтали*/
+  align-items: center;     /*Центрирование по вертикали */
+  width:375px;
+  height: 69px;
+  border: none;
+  margin-top: 20px;
+  box-shadow: none;
+
+  font-family: OpenSans-Semibold;
+  font-size: 30px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+
+}
+
+.button-order, 
+.button-order:active, 
+.button-order:focus {
+  outline: none;
+}
+
+
+.paginator-ul {
+  display: flex;
+  justify-content: center; /*Центрирование по горизонтали*/
+  align-items: center;     /*Центрирование по вертикали */
+  width: 375;
+  height: 100px;
+  margin: auto;
+  padding:  0;
+}
+.paginator__active {
+  display: inline-block;  /* Располагаем элементы по горизонтали */
+  list-style: none; /* Убираем маркеры списка */
+  margin: 11px;
+  height: 15px;
+  width: 15px;
+  background: #0D7BAB;
+  border-radius: 50%;
+}
+.paginator__inactive {
+  display: inline-block;  /* Располагаем элементы по горизонтали */
+  list-style: none; /* Убираем маркеры списка */
+  margin: 11px;
+  height: 15px;
+  width: 15px;
+  background: #C9CFD3;
+  border-radius: 50%;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+* {
+  box-sizing: border-box; }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0; }
+
+
+
+
+
+
+
+
+/*# sourceMappingURL=style.css.map */
