@@ -11,6 +11,7 @@ constructor(data) {
 
   this.el = data.el;
   this.data = data.base.results;
+  this.resolve = data.resolve;
   this.counter = 0;
 
   this.render(this.data);
@@ -92,7 +93,8 @@ comparison () {
       this.counter++;
 
       if(this.counter === 10) {
-        console.log('You WIN !!!');
+        this.resolve(true);
+        //console.log('You WIN !!!');
       }
 
     } else{        
@@ -101,7 +103,8 @@ comparison () {
       let image  = new Image();
       image.src = './images/wrong.png'
       divImage.append(image);
-      console.log('You\'ve lost');
+      this.resolve(false);
+      //console.log('You\'ve lost');
     }
   }
 

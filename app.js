@@ -39,13 +39,20 @@ base.httpGet('https://opentdb.com/api.php?amount=10&type=multiple')
 })
 .then(base=>{
 		//rendering
-
-		let mediator = new Mediator({
-			base: base,
-			el: document.querySelector('.product-container')
-		});
-
-		return base;
+		return new Promise(resolve=>{
+			let mediator = new Mediator({
+				base: base,
+				el: document.querySelector('.product-container'),
+				resolve: resolve
+			});
+		})
+})
+.then(value=>{
+	if(value) {
+		console.log('You WIN !!!');
+	} else if(!value) {
+		console.log('You\'ve lost');
+	}
 })
 .catch(error => console.error(error));
 
